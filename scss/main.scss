@@ -1,3 +1,127 @@
-@use './variables';
-@use './reset';
-@use './mixins';
+@use "./variables" as *;
+@use "./reset" as *;
+
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr-neutral-100;
+  font-family: $ff-body;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 1rem;
+  color: $clr-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-heading;
+  line-height: 1;
+}
+
+.card {
+  // max-width: 23.4375rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 1.25rem rgb($clr-dark-green-400, 0.1);
+
+  .card__item {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__icon img {
+    width: 4rem;
+  }
+
+  .card__button {
+    border: 2px solid transparent;
+  }
+
+  .card__item:nth-of-type(1) {
+    background-color: $clr-yellow-400;
+
+    .card__button {
+      color: $clr-yellow-400;
+    }
+  }
+  .card__item:nth-of-type(2) {
+    background-color: $clr-green-400;
+
+    .card__button {
+      color: $clr-green-400;
+    }
+  }
+  .card__item:nth-of-type(3) {
+    background-color: $clr-dark-green-400;
+
+    .card__button {
+      color: $clr-dark-green-400;
+    }
+  }
+
+  .card__item > .card__button:hover {
+    background-color: transparent;
+    color: $clr-white;
+    border-color: $clr-white;
+  }
+
+  .card__title {
+    margin-top: 2.1875rem;
+    font-size: $fs-heading;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .card__description {
+    margin-top: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: -0.001em;
+  }
+
+  .card__button {
+    margin-top: 1.5625rem;
+    background-color: $clr-white;
+    border-radius: $rounded-full;
+    padding: 0.6875rem 1.96875rem;
+    font-weight: 300;
+    text-decoration: none;
+    width: max-content;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media screen and (min-width: 60rem) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 57.5rem;
+
+    .card__item {
+      min-height: 31.25rem;
+    }
+
+    .card__button {
+      margin-top: auto;
+    }
+  }
+}
