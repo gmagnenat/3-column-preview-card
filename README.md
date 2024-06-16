@@ -45,6 +45,8 @@ Users should be able to:
 
 ### What I learned
 
+gitHub CLI
+
 ### Continued development
 
 ### Useful resources
