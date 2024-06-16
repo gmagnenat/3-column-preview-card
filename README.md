@@ -35,6 +35,19 @@ Users should be able to:
 
 ## My process
 
+- Prepare the project structure with [Vite](https://vitejs.dev/).
+- Inspect the design, and style guide. Read the requirement
+- Plan the different element to code
+- Implement the HTML
+- Implement styles for the mobile version
+- Add media queries and adapt styles for the desktop version
+- Adjust styles with [PerfectPixel](https://www.welldonecode.com/perfectpixel/)
+- Test the solution with keyboard and adjust markup
+- Test the solution with voice over and adjust markup
+- Push the solution live
+- Test the solution on Phone and Polypane
+- Update README
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -49,6 +62,12 @@ I learned about the gitHub CLI it allows me to create quickly a new repository a
 without leaving the command line. [https://cli.github.com/](https://cli.github.com/)
 
 ### Continued development
+
+TODO
+
+- clean the styling, add variables for the different spacing
+- add mixin for the media query
+- add mixin for repeating part of the code
 
 ### Useful resources
 
