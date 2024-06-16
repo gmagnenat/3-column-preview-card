@@ -26,14 +26,13 @@ h6 {
 }
 
 .card {
-  // max-width: 23.4375rem;
+  max-width: 23.4375rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0.625rem 1.25rem rgb($clr-dark-green-400, 0.1);
 
   .card__item {
     padding: 3rem;
-
     display: flex;
     flex-direction: column;
   }

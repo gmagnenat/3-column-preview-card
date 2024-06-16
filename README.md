@@ -45,7 +45,8 @@ Users should be able to:
 
 ### What I learned
 
-gitHub CLI
+I learned about the gitHub CLI it allows me to create quickly a new repository and push it to gitHub
+without leaving the command line. [https://cli.github.com/](https://cli.github.com/)
 
 ### Continued development
 
